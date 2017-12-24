@@ -29,6 +29,6 @@ public interface CacheFactory {
      * @param type the data type. 
      * @return the {@code Cache<T>} instance.
      */
-    public Cache<?> getLRUCache(Class<?> type);
+    public Cache<?> getLRUCache(Class<?> t);
     
 }
