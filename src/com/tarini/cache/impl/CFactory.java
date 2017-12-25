@@ -46,13 +46,12 @@ public class CFactory implements CacheFactory {
     }
     
     
-    /* (non-Javadoc)
+    /**
      * @see com.tarini.cache.impl.CacheFactory#getLRUCache(java.lang.Class)
      */
     @Override
-    public Cache<?> getLRUCache(Class<?> t) {
-        //TODO: Fix this code needs to look at it.
-        LRUCache<?> cache = new LRUCache<>();
+    public <E> Cache<E> getLRUCache(E type) {
+        Cache<E> cache = new LRUCache<>();
         return cache;
     }
 

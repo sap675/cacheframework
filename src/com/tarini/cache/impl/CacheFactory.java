@@ -17,18 +17,20 @@
  ***************************************************************************************/
 package com.tarini.cache.impl;
 
+// TODO: Auto-generated Javadoc
 /**
  * A factory for creating Cache objects.
  */
 public interface CacheFactory {
 
+    
     /**
-     * Creates the instance of the {@code Cache<T>} of the given type.
-     * This cache follows the LRU Cache implementation.
+     * Gets the LRU cache.
      *
-     * @param type the data type. 
-     * @return the {@code Cache<T>} instance.
+     * @param <E> the element type
+     * @param type the data type
+     * @return the LRU cache
      */
-    public Cache<?> getLRUCache(Class<?> t);
+    public <E> Cache<E> getLRUCache(E type);
     
 }
